@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+  <title>Dashboard Template for Bootstrap</title>
+
+</head>
+<body>
+  <table>
+	<tr>
+		<th>Id</th>
+		<th>Nama</th>
+		<th>Test</th>
+	</tr>
+	<tr th:each = "data:${dataActor}">
+		<td th:text="${data.actorId}"></td>
+		<td th:text="${data.firstName}"></td>
+		<td th:text="${data.lastName}"></td>
+	</tr>
+  </table>
+</body>
+</html>
